@@ -72,6 +72,16 @@ github "Instagram/IGListKit" ~> 3.0
 
 > For advanced usage, see our [Installation Guide](https://instagram.github.io/IGListKit/installation.html).
 
+### Manual
+
+Drag the contents of the `Source` directory to your project:
+
+```ogdl
+github "Instagram/IGListKit" ~> 3.0
+```
+
+> For advanced usage, see our [Installation Guide](https://instagram.github.io/IGListKit/installation.html).
+
 ## Getting Started
 
 ```bash
