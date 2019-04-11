@@ -10,5 +10,5 @@
 #if TARGET_OS_EMBEDDED || TARGET_OS_SIMULATOR
 #import <UIKit/UIKit.h>
 #else
-#import <Cocoa/Cocoa.h>
+#import <Cocoa/Cocoa.h"
 #endif

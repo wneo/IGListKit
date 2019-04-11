@@ -8,7 +8,7 @@
 #import "IGListMoveIndexPath.h"
 #import "IGListMoveIndexPathInternal.h"
 
-#import <IGListKit/IGListMacros.h>
+#import "IGListMacros.h"
 
 @implementation IGListMoveIndexPath
 
@@ -31,15 +31,15 @@
         return YES;
     }
     if ([object isKindOfClass:[IGListMoveIndexPath class]]) {
-        NSIndexPath *f1 = self.from, *f2 = [object from];
-        NSIndexPath *t1 = self.to, *t2 = [object to];
+        NSIndexPath *f1 = self.from, *f2 = [(IGListMoveIndexPath *)object from];
+        NSIndexPath *t1 = self.to, *t2 = [(IGListMoveIndexPath *)object to];
         return [f1 isEqual:f2] && [t1 isEqual:t2];
     }
     return NO;
 }
 
 - (NSComparisonResult)compare:(id)object {
-    return [[self from] compare:[object from]];
+    return [[self from] compare:[(IGListMoveIndexPath *)object from]];
 }
 
 - (NSString *)description {
